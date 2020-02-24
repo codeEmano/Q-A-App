@@ -10,14 +10,14 @@ function Question(props)
 		onChange={() =>	props.handleChange(props.quiz.id)} 
 		/>{props.quiz.options[1]}
 		<input type="checkbox" checked={props.quiz.answered}
-		onChange={() =>	props.handleChange(props.quiz.id)} 
+		onChange={() =>	props.handleChange(props.quiz.id)}
 		/>{props.quiz.options[2]}
 		<input type="checkbox" checked={props.quiz.answered}
-		onChange={() =>	props.handleChange(props.quiz.id)} 
+		onChange={() =>	props.handleChange(props.quiz.id)}
 		/>{props.quiz.options[3]}
 		</div>
 		)
 	}
-	
+
 
 export default Question
