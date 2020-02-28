@@ -54,13 +54,18 @@ function App() {
       <Question quiz={data} key={data.id} 
         handleChange={handleChangeId} />)}) 
   
-    
-    return (
-    <div>
-    {newArr}
-    <br />
-    <button onClick={changeStatus}>{buttonDisplay}</button>
-    </div>
-  )
+    if(loggedIn)
+    {return (
+        <div>
+        {newArr}
+        <br />
+        <button onClick={changeStatus}>{buttonDisplay}</button>
+        </div>
+      )}
+  else
+  {
+    return(
+        <button onClick={changeStatus}>{buttonDisplay}</button>)
+  }
 }
 export default App;
